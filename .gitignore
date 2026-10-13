@@ -216,3 +216,31 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---- Geospatial data and QGIS files ----
+
+# Geospatial source and derived data (not redistributed; see each project's data/README.md)
+projects/*/data/raw/*
+projects/*/data/processed/*
+!projects/*/data/raw/.gitkeep
+!projects/*/data/processed/.gitkeep
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.gpkg
+*.gpkg-shm
+*.gpkg-wal
+*.geojson
+*.tif
+*.tiff
+
+# QGIS autosave and backup files
+*.qgz~
+*.qgs~
+*.qgz.autosave
+
+# QGIS project files (they store local paths)
+*.qgz
+*.qgs
